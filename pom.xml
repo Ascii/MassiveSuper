@@ -47,25 +47,25 @@
         <massiveHttpclientVersion>4.5.3</massiveHttpclientVersion>
 
         <!-- https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/ -->
-        <massiveSpigotVersion>1.15.1-R0.1-SNAPSHOT</massiveSpigotVersion>
-        <massivePaperVersion>1.15.1-R0.1-SNAPSHOT</massivePaperVersion>
+        <massiveSpigotVersion>1.16.3-R0.1-SNAPSHOT</massiveSpigotVersion>
+        <massivePaperVersion>1.16.3-R0.1-SNAPSHOT</massivePaperVersion>
 
         <!-- http://nexus.hc.to/content/repositories/pub_releases/net/milkbowl/vault/Vault/ -->
-        <massiveVaultVersion>1.5.6</massiveVaultVersion>
+        <massiveVaultVersion>1.7.3</massiveVaultVersion>
 
         <!-- https://github.com/lucko/commodore -->
-        <massiveCommodoreVersion>1.2</massiveCommodoreVersion>
+        <massiveCommodoreVersion>1.8</massiveCommodoreVersion>
 
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldedit/worldedit-bukkit/ -->
         <!-- The artifact in their repository was not properly shaded -->
         <!-- The solution for now is to download and install manually -->
-        <massiveWorldEditVersion>7.0.1</massiveWorldEditVersion>
+        <massiveWorldEditVersion>7.2.0-SNAPSHOT</massiveWorldEditVersion>
 
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldguard/worldguard-legacy/ -->
         <massiveWorldGuardVersion>7.0.2</massiveWorldGuardVersion>
 
         <!-- http://repo.dmulloy2.net/content/repositories/public/com/comphenix/protocol/ProtocolLib/ -->
-        <massiveProtocolLibVersion>4.3.0</massiveProtocolLibVersion>
+        <massiveProtocolLibVersion>4.5.1</massiveProtocolLibVersion>
 
         <!-- http://repo.howaner.de/com/vexsoftware/votifier/ -->
         <massiveVotifierVersion>1.9</massiveVotifierVersion>
@@ -74,23 +74,23 @@
         <massiveMineverseChatVersion>2.14.0</massiveMineverseChatVersion>
 
         <!-- http://repo.mikeprimm.com/us/dynmap/dynmap/ -->
-        <massiveDynmapVersion>3.0-SNAPSHOT</massiveDynmapVersion>
+        <massiveDynmapVersion>Dynmap-3.1-beta4-spigot</massiveDynmapVersion>
 
         <!-- ~~~~~~~~~~~~~~~ -->
         <!-- Custom Versions -->
         <!-- ~~~~~~~~~~~~~~~ -->
 
         <!-- https://www.spigotmc.org/resources/mcmmo.2445/ -->
-        <massiveMcmmoVersion>1.5.10</massiveMcmmoVersion>
+        <massiveMcmmoVersion>2.1.145</massiveMcmmoVersion>
 
         <!-- https://www.spigotmc.org/resources/wgregionevents-continued.15946/ -->
         <massiveWGRegionEventsVersion>2.1.0</massiveWGRegionEventsVersion>
 
         <!-- https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/ -->
-        <massiveLwcVersion>2.1.1</massiveLwcVersion>
+        <massiveLwcVersion>2.1.5</massiveLwcVersion>
 
         <!-- https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Hook-into-PlaceholderAPI -->
-        <massivePlaceholderAPIVersion>2.10.4</massivePlaceholderAPIVersion>
+        <massivePlaceholderAPIVersion>2.10.6</massivePlaceholderAPIVersion>
     </properties>
 
     <!-- Repositories -->
@@ -134,6 +134,10 @@
         <repository>
             <id>placeholderapi</id>
             <url>http://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+        </repository>
+        <repository>
+            <id>CodeMC</id>
+            <url>https://repo.codemc.org/repository/maven-public/</url>
         </repository>
     </repositories>
 
@@ -283,7 +287,7 @@
             </dependency>
             <dependency>
                 <groupId>net.milkbowl.vault</groupId>
-                <artifactId>Vault</artifactId>
+                <artifactId>vault-repo</artifactId>
                 <version>${massiveVaultVersion}</version>
                 <scope>provided</scope>
             </dependency>
@@ -349,6 +353,12 @@
               <scope>provided</scope>
             </dependency>
 
+            <dependency>
+                <groupId>com.gmail.nossr50.mcMMO</groupId>
+                <artifactId>mcMMO</artifactId>
+                <version>${massiveMcmmoVersion}</version>
+                <scope>provided</scope>
+            </dependency>
             <!-- Custom - Custom artifacts. Manually installed by command. -->
             <!--
                 Not everyone has a Maven repo.
@@ -375,7 +385,7 @@
             <!--
                 Page: https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/history
                 File: https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/download?version=131362
-                Intall: mvn install:install-file -DgroupId=com.griefcraft -DartifactId=lwc -Dversion=2.1.1 -Dpackaging=jar -Dfile=EntityLWC.jar
+                Intall: mvn install:install-file -DgroupId=com.griefcraft -DartifactId=lwc -Dversion=2.1.5 -Dpackaging=jar -Dfile=EntityLWC.jar
                 Test: mvn dependency:get -Dartifact=com.griefcraft:lwc:2.1.1
             -->
             <dependency>

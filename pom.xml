@@ -65,7 +65,7 @@
         <massiveWorldGuardVersion>7.0.2</massiveWorldGuardVersion>
 
         <!-- http://repo.dmulloy2.net/content/repositories/public/com/comphenix/protocol/ProtocolLib/ -->
-        <massiveProtocolLibVersion>4.5.1</massiveProtocolLibVersion>
+        <massiveProtocolLibVersion>4.6.0-SNAPSHOT</massiveProtocolLibVersion>
 
         <!-- http://repo.howaner.de/com/vexsoftware/votifier/ -->
         <massiveVotifierVersion>1.9</massiveVotifierVersion>
@@ -90,7 +90,7 @@
         <massiveLwcVersion>2.1.5</massiveLwcVersion>
 
         <!-- https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Hook-into-PlaceholderAPI -->
-        <massivePlaceholderAPIVersion>2.10.6</massivePlaceholderAPIVersion>
+        <massivePlaceholderAPIVersion>2.10.9</massivePlaceholderAPIVersion>
     </properties>
 
     <!-- Repositories -->
@@ -527,6 +527,12 @@
                 <scope>provided</scope>
             </dependency>
 
+            <dependency>
+                <groupId>org.spigotmc.spigot</groupId>
+                <artifactId>116R2</artifactId>
+                <version>1.16.3-R0.1-SNAPSHOT</version>
+                <scope>provided</scope>
+            </dependency>
             <dependency>
                 <groupId>org.spigotmc.spigot</groupId>
                 <artifactId>112R1</artifactId>

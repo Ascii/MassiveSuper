@@ -74,14 +74,14 @@
         <massiveMineverseChatVersion>2.14.0</massiveMineverseChatVersion>
 
         <!-- http://repo.mikeprimm.com/us/dynmap/dynmap/ -->
-        <massiveDynmapVersion>Dynmap-3.1-beta4-spigot</massiveDynmapVersion>
+        <massiveDynmapVersion>3.1-beta-2</massiveDynmapVersion>
 
         <!-- ~~~~~~~~~~~~~~~ -->
         <!-- Custom Versions -->
         <!-- ~~~~~~~~~~~~~~~ -->
 
         <!-- https://www.spigotmc.org/resources/mcmmo.2445/ -->
-        <massiveMcmmoVersion>2.1.145</massiveMcmmoVersion>
+        <massiveMcmmoVersion>2.1.158</massiveMcmmoVersion>
 
         <!-- https://www.spigotmc.org/resources/wgregionevents-continued.15946/ -->
         <massiveWGRegionEventsVersion>2.1.0</massiveWGRegionEventsVersion>
@@ -104,6 +104,11 @@
         <repository>
             <id>destroystokyo-repo</id>
             <url>https://repo.destroystokyo.com/repository/maven-snapshots/</url>
+        </repository>
+        <!-- Dynmap -->
+        <repository>
+            <id>dynmap-repo</id>
+            <url>http://repo.mikeprimm.com/</url>
         </repository>
         <!-- Vault-->
         <repository>
@@ -377,7 +382,7 @@
             -->
             <dependency>
               <groupId>us.dynmap</groupId>
-              <artifactId>dynmap</artifactId>
+              <artifactId>dynmap-api</artifactId>
               <version>${massiveDynmapVersion}</version>
               <scope>provided</scope>
             </dependency>
@@ -389,8 +394,8 @@
                 Test: mvn dependency:get -Dartifact=com.griefcraft:lwc:2.1.1
             -->
             <dependency>
-                <groupId>com.griefcraft</groupId>
-                <artifactId>lwc</artifactId>
+                <groupId>com.griefcraft.lwc</groupId>
+                <artifactId>Modern-LWC</artifactId>
                 <version>${massiveLwcVersion}</version>
                 <scope>provided</scope>
             </dependency>

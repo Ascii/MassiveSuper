@@ -71,7 +71,7 @@
         <massiveVotifierVersion>1.9</massiveVotifierVersion>
 
         <!-- https://github.com/kangarko/ChatControl-Pro/wiki/Developer-API -->
-        <massiveMineverseChatVersion>2.14.0</massiveMineverseChatVersion>
+        <massiveMineverseChatVersion>2.20.2</massiveMineverseChatVersion>
 
         <!-- http://repo.mikeprimm.com/us/dynmap/dynmap/ -->
         <massiveDynmapVersion>3.1-beta-2</massiveDynmapVersion>
@@ -443,7 +443,7 @@
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=18R2 -Dversion=1.8.3-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-18R2.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=18R1 -Dversion=1.8.1-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-18R1.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=17R4 -Dversion=1.7.10-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-17R4.jar
-            -->
+
 
             <dependency>
                 <groupId>org.spigotmc.spigot</groupId>
@@ -531,7 +531,7 @@
                 <version>fake</version>
                 <scope>provided</scope>
             </dependency>
-
+            -->
             <dependency>
                 <groupId>org.spigotmc.spigot</groupId>
                 <artifactId>116R2</artifactId>

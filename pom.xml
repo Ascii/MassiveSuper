@@ -47,8 +47,8 @@
         <massiveHttpclientVersion>4.5.3</massiveHttpclientVersion>
 
         <!-- https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/ -->
-        <massiveSpigotVersion>1.16.3-R0.1-SNAPSHOT</massiveSpigotVersion>
-        <massivePaperVersion>1.16.3-R0.1-SNAPSHOT</massivePaperVersion>
+        <massiveSpigotVersion>1.16.4-R0.1-SNAPSHOT</massiveSpigotVersion>
+        <massivePaperVersion>1.16.4-R0.1-SNAPSHOT</massivePaperVersion>
 
         <!-- http://nexus.hc.to/content/repositories/pub_releases/net/milkbowl/vault/Vault/ -->
         <massiveVaultVersion>1.7.3</massiveVaultVersion>
@@ -59,7 +59,7 @@
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldedit/worldedit-bukkit/ -->
         <!-- The artifact in their repository was not properly shaded -->
         <!-- The solution for now is to download and install manually -->
-        <massiveWorldEditVersion>7.2.0-SNAPSHOT</massiveWorldEditVersion>
+        <massiveWorldEditVersion>7.3.0-SNAPSHOT</massiveWorldEditVersion>
 
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldguard/worldguard-legacy/ -->
         <massiveWorldGuardVersion>7.0.2</massiveWorldGuardVersion>

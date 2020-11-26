@@ -59,7 +59,7 @@
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldedit/worldedit-bukkit/ -->
         <!-- The artifact in their repository was not properly shaded -->
         <!-- The solution for now is to download and install manually -->
-        <massiveWorldEditVersion>7.3.0-SNAPSHOT</massiveWorldEditVersion>
+        <massiveWorldEditVersion>7.2.0</massiveWorldEditVersion>
 
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldguard/worldguard-legacy/ -->
         <massiveWorldGuardVersion>7.0.2</massiveWorldGuardVersion>

@@ -4,7 +4,7 @@
     <!-- Basics -->
     <groupId>com.massivecraft.massivesuper</groupId>
     <artifactId>MassiveSuper</artifactId>
-    <version>3.3.0</version>
+    <version>3.3.2</version>
     <packaging>pom</packaging>
 
     <!-- Info -->
@@ -62,7 +62,7 @@
         <massiveWorldEditVersion>7.2.0</massiveWorldEditVersion>
 
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldguard/worldguard-legacy/ -->
-        <massiveWorldGuardVersion>7.0.2</massiveWorldGuardVersion>
+        <massiveWorldGuardVersion>7.0.4</massiveWorldGuardVersion>
 
         <!-- http://repo.dmulloy2.net/content/repositories/public/com/comphenix/protocol/ProtocolLib/ -->
         <massiveProtocolLibVersion>4.6.0-SNAPSHOT</massiveProtocolLibVersion>
@@ -74,8 +74,8 @@
         <massiveMineverseChatVersion>2.20.2</massiveMineverseChatVersion>
 
         <!-- http://repo.mikeprimm.com/us/dynmap/dynmap/ -->
-        <massiveDynmapVersion>3.1-beta-2</massiveDynmapVersion>
-
+        <massiveDynmapVersion>3.1-beta5</massiveDynmapVersion>
+        
         <!-- ~~~~~~~~~~~~~~~ -->
         <!-- Custom Versions -->
         <!-- ~~~~~~~~~~~~~~~ -->
@@ -118,7 +118,7 @@
         <!-- WorldEdit and WorldGuard -->
         <repository>
             <id>sk89q-repo</id>
-            <url>http://maven.sk89q.com/repo/</url>
+            <url>https://maven.enginehub.org/repo/</url>
         </repository>
         <!-- ProtocolLib -->
         <repository>
@@ -334,7 +334,7 @@
             </dependency>
             <dependency>
                 <groupId>com.sk89q.worldguard</groupId>
-                <artifactId>worldguard-legacy</artifactId>
+                <artifactId>worldguard-bukkit</artifactId>
                 <version>${massiveWorldGuardVersion}</version>
                 <scope>provided</scope>
             </dependency>
@@ -377,8 +377,8 @@
 
             <!--
                 Page: https://www.spigotmc.org/resources/dynmap.274/
-                Intall: mvn install:install-file -DgroupId=us.dynmap -DartifactId=dynmap -Dversion=3.0-SNAPSHOT -Dpackaging=jar -Dfile=dynmap.jar
-                Test: mvn dependency:get -Dartifact=us.dynmap:dynmap:3.0-SNAPSHOT
+                Intall: mvn install:install-file -DgroupId=us.dynmap -DartifactId=dynmap -Dversion=3.1-beta5 -Dpackaging=jar -Dfile=Dynmap-3.1-beta5-spigot.jar
+                Test: mvn dependency:get -Dartifact=us.dynmap:dynmap:3.1-beta5
             -->
             <dependency>
               <groupId>us.dynmap</groupId>
@@ -402,8 +402,8 @@
 
             <!--
                 Page: https://www.spigotmc.org/resources/venturechat.771/
-                Intall: mvn install:install-file -DgroupId=mineverse.Aust1n46.chat -DartifactId=MineverseChat -Dversion=2.14.0 -Dpackaging=jar -Dfile=VentureChat.jar
-                Test: mvn dependency:get -Dartifact=mineverse.Aust1n46.chat:MineverseChat:2.14.0
+                Intall: mvn install:install-file -DgroupId=mineverse.Aust1n46.chat -DartifactId=MineverseChat -Dversion=2.20.2 -Dpackaging=jar -Dfile=VentureChat2.22.2.jar
+                Test: mvn dependency:get -Dartifact=mineverse.Aust1n46.chat:MineverseChat:2.20.2
             -->
             <dependency>
                 <groupId>mineverse.Aust1n46.chat</groupId>
@@ -615,6 +615,18 @@
             <dependency>
                 <groupId>com.massivecraft.massivesuper</groupId>
                 <artifactId>MassiveSuper</artifactId>
+                <version>${project.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.massivecraft.massivebasic</groupId>
+                <artifactId>MassiveBasic</artifactId>
+                <version>${project.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.massivecraft.massiveperms</groupId>
+                <artifactId>MassivePerms</artifactId>
                 <version>${project.version}</version>
                 <scope>provided</scope>
             </dependency>
